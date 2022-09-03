@@ -6,12 +6,19 @@ import lombok.Setter;
 @Getter @Setter
 public class Message {
 
-    public enum MessageType {
-        ENTER, COMM
+    public enum Type {
+        NICKNAME, MESSAGE
     }
 
-    private MessageType messageType;
-    private String roomId;
-    private String sender;
-    private String message;
+    private Type type;
+    private String payload;
+
+//    public enum MessageType {
+//        ENTER, COMM
+//    }
+//
+//    private MessageType messageType;
+//    private String roomId;
+//    private String sender;
+//    private String message;
 }
